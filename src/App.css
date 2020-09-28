@@ -1,0 +1,127 @@
+* {
+  text-transform: capitalize;
+}
+
+:root {
+  --primary-color: linear-gradient(90deg, #ec008c 0%, #fc6767 100%);
+  --font-color: white;
+}
+
+.header {
+  background: var(--primary-color) !important;
+  color: var(--font-color) !important;
+}
+.header .heading {
+  text-transform: uppercase;
+  font-size: 3rem !important;
+}
+.header .sub-heading {
+  font-size: 1.4rem !important;
+  padding-bottom: 1rem !important;
+}
+
+.main-card {
+  height: 600px;
+  overflow: hidden !important;
+  box-shadow: 0px 1px 5px silver;
+  border: none !important;
+  outline: none !important;
+  border: none !important;
+  outline: none !important;
+  background-color: var(--font-color) !important;
+  position: relative;
+}
+.main-card .read-more {
+  position: absolute;
+  bottom: 10px;
+  z-index: 3;
+  background: var(--primary-color) !important;
+  border-color: #ec008c !important;
+  border-radius: 10px;
+}
+.main-card .heading {
+  color: black !important;
+}
+
+.main-card .main_img {
+  width: 100% !important;
+  min-height: 200px;
+  padding: 0px !important;
+  transition: all 1s ease-in-out;
+}
+.main-card .card-body {
+  border: none;
+  padding: 10px 0rem !important;
+}
+.main-card figure {
+  overflow: hidden;
+  max-height: 220px;
+}
+.main-card .main_img:hover {
+  transform: scale(1.2);
+}
+
+.search-bar {
+  margin: 2rem auto !important;
+}
+.search-bar input {
+  border-radius: 50px !important;
+  position: relative;
+  z-index: 1;
+  height: 6vh !important;
+  text-transform: none !important;
+  font-size: 0.78rem !important;
+  border: 1px solid black;
+}
+
+.search-bar input:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+.search-bar span {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 3;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background: var(--font-color) !important;
+  border: none !important;
+}
+.search-bar span img {
+  height: 18px;
+}
+
+.modal-footer {
+  display: block !important;
+}
+.modal-footer button {
+  background: red !important;
+  color: var(--font-color) !important;
+  border-color: red !important;
+}
+
+.footer {
+  padding-top: 15px;
+  background: var(--primary-color);
+  color: var(--font-color);
+}
+.footer img {
+  height: 30px;
+  margin-left: 1.2rem;
+}
+.footer a {
+  padding: 8px 0px;
+  padding-right: 4px;
+}
+.footer img:hover {
+  background-color: white;
+  border-radius: 16px;
+}
+
+@media only screen and (min-width: 900px) {
+  .search-bar input {
+    font-size: 1rem !important;
+  }
+}
